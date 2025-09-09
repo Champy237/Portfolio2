@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NDJONG CEDRIC ALLAN - Développeur Full Stack</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">&lt; NC_ALLAN / &gt;</span>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link" data-fr="Accueil" data-en="Home">Accueil</a>
+                <a href="#about" class="nav-link" data-fr="À propos" data-en="About">À propos</a>
+                <a href="#skills" class="nav-link" data-fr="Compétences" data-en="Skills">Compétences</a>
+                <a href="#projects" class="nav-link" data-fr="Projets" data-en="Projects">Projets</a>
+                <a href="#contact" class="nav-link" data-fr="Contact" data-en="Contact">Contact</a>
+                <button class="lang-toggle" onclick="toggleLanguage()">
+                    <span id="lang-text">EN</span>
+                </button>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+        <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="greeting" data-fr="Salut, je suis" data-en="Hi, I'm">Salut, je suis</span>
+                        <span class="name">NDJONG CEDRIC ALLAN</span>
+                    </h1>
+                    <p class="hero-subtitle" data-fr="Développeur Full Stack & Expert en Sécurité Informatique" data-en="Full Stack Developer & Cybersecurity Expert">
+                        Développeur Full Stack Junior & Passionné de Cybersécurité
+
+                    </p>
+                    <p class="hero-description" data-fr="Étudiant en informatique niveau 3 à l'Université de Yaoundé 1, passionné par le développement web, la sécurité informatique et les réseaux." data-en="Level 3 Computer Science student at University of Yaoundé 1, passionate about web development, cybersecurity and networking.">
+                        Étudiant en informatique niveau 3 à l'Université de Yaoundé 1, passionné par le développement web, la sécurité informatique et les réseaux.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary" data-fr="Voir mes projets" data-en="View My Work">Voir mes projets</a>
+                        <a href="#contact" class="btn btn-secondary" data-fr="Me contacter" data-en="Contact Me">Me contacter</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-container">
+                        <img src="img.jpeg" alt="NDJONG CEDRIC ALLAN" class="profile-img">
+                        <div class="image-overlay"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="scroll-arrow"></div>
+            </div>
+        </div>
+        <div class="hero-bg-animation">
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title" data-fr="À propos de moi" data-en="About Me">À propos de moi</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p data-fr="Je suis NDJONG CEDRIC ALLAN, né à Yaoundé, Cameroun. Actuellement étudiant en informatique niveau 3 à l'Université de Yaoundé 1 avec un Bac+2 en informatique." data-en="I am NDJONG CEDRIC ALLAN, born in Yaoundé, Cameroon. Currently a level 3 computer science student at University of Yaoundé 1 with a GCE+2 in Computer Network.">
+                        Je suis NDJONG CEDRIC ALLAN, né à Yaoundé, Cameroun. Actuellement étudiant en informatique niveau 3 à l'Université de Yaoundé 1 avec un Bac+2 en informatique.
+                    </p>
+                    <p data-fr="Passionné par la technologie, je me spécialise dans le développement full stack, la sécurité informatique, les réseaux et le design graphique. Mon objectif est de créer des solutions innovantes qui résolvent des problèmes réels." data-en="Passionate about technology, I specialize in full stack development, cybersecurity, networking and graphic design. My goal is to create innovative solutions that solve real problems.">
+                        Passionné par la technologie, je me spécialise dans le développement full stack, la sécurité informatique, les réseaux et le design graphique. Mon objectif est de créer des solutions innovantes qui résolvent des problèmes réels.
+                    </p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">2+</span>
+                        <span class="stat-label" data-fr="Années d'expérience" data-en="Years Experience">Années d'expérience</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">8+</span>
+                        <span class="stat-label" data-fr="Technologies maîtrisées" data-en="Technologies Mastered">Technologies maîtrisées</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">7+</span>
+                        <span class="stat-label" data-fr="Projets réalisés" data-en="Projects Completed">Projets réalisés</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title" data-fr="Mes Compétences" data-en="My Skills">Mes Compétences</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 data-fr="Developpement web" data-en="Web Development">Development WEB</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML</span>
+                            <div class="skill-level" data-level="85"></div>
+                        </div>
+
+                        <div class="skill-item">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>CSS3</span>
+                            <div class="skill-level" data-level="80"></div>
+                        </div>
+
+                        <div class="skill-item">
+                            <i class="fas fa-flask"></i>
+                            <span>Flask</span>
+                            <div class="skill-level" data-level="45"></div>
+                        </div>
+
+                        <div class="skill-item">
+                            <i class="fab fa-python"></i>
+                            <span>Django</span>
+                            <div class="skill-level" data-level="60"></div>
+                        </div>
+
+                        <div class="skill-item">
+                            <i class="fas fa-leaf"></i>
+                            <span>Spring Boot</span>
+                            <div class="skill-level" data-level="40"></div>
+                        </div>
+
+
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3 data-fr="Déploiement & DevOps" data-en="Deployment & DevOps">Déploiement & DevOps</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                            <div class="skill-level" data-level="55"></div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-aws"></i>
+                            <span>AWS</span>
+                            <div class="skill-level" data-level="10"></div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-docker"></i>
+                            <span>Docker</span>
+                            <div class="skill-level" data-level="7"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 data-fr="Bases de Données" data-en="Databases">Bases de Données</h3>
+                    <div class="skill-items">
+
+                        <div class="skill-item">
+                            <img src="https://www.mysql.com/common/logos/logo-mysql-170x115.png" alt="MySQL Logo" style="width:24px; height:24px; vertical-align:middle; margin-right:8px;">
+                            <span>MySQL</span>
+                            <div class="skill-level" data-level="40"></div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-server"></i> <!-- pour PostgreSQL -->
+                            <span>PostgreSQL</span>
+                            <div class="skill-level" data-level="35"></div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-leaf"></i> <!-- MongoDB -->
+                            <span>MongoDB</span>
+                            <div class="skill-level" data-level="9"></div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>H2</span>
+                            <div class="skill-level" data-level="35"></div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 data-fr="Spécialisations" data-en="Specializations">Spécialisations</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fas fa-network-wired"></i>
+                            <span data-fr="Réseaux Informatiques" data-en="Computer Networks">Réseaux Informatiques</span>
+                            <div class="skill-level" data-level="50"></div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span data-fr="Sécurité Informatique" data-en="Cybersecurity">Sécurité Informatique</span>
+                            <div class="skill-level" data-level="15"></div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-palette"></i>
+                            <span data-fr="Design Graphique" data-en="Graphic Design">Design Graphique</span>
+                            <div class="skill-level" data-level="45"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 data-fr="language de programmation" data-en="programming language">language de programmation</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                            <div class="skill-level" data-level="70"></div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-js-square"></i>
+                            <span>JavaScript</span>
+                            <div class="skill-level" data-level="45"></div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-code"></i>
+                            <span>C/C++</span>
+                            <div class="skill-level" data-level="60"></div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-java"></i>
+                            <span>Java</span>
+                            <div class="skill-level" data-level="30"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title" data-fr="Mes Projets" data-en="My Projects">Mes Projets</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="Screenshot from 2025-09-02 20-02-03.png" alt="Site de Vente de Jus de Fruits" class="project-img" loading="lazy" style="width:100%;height:100%;object-fit:cover;">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="Voir le site"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link" title="Code source"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 data-fr="Site de Vente de Jus de Fruits" data-en="Fruit Juice E-Commerce Site">Site de Vente de Jus de Fruits</h3>
+                        <p data-fr="Plateforme en ligne pour acheter des jus frais et smoothies, avec gestion du panier et commandes, développée avec Django et Bootstrap." 
+                        data-en="Online platform to buy fresh juices and smoothies, with cart and order management, built with Django and Bootstrap.">
+                            Plateforme en ligne pour acheter des jus frais et smoothies, avec gestion du panier et commandes, développée avec Django et Bootstrap.
+                        </p>
+                        <div class="project-tech">
+                            <span>Django</span>
+                            <span>Bootstrap</span>
+                            <span>E-commerce</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="spring.png" alt="API Spring Boot" class="project-img" loading="lazy" style="width:100%;height:100%;object-fit:cover;">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="http://localhost:8080/swagger-ui.html" class="project-link" title="Voir l'API" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/ton-github/springboot-api" class="project-link" title="Code source" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 data-fr="API Spring Boot de Gestion" data-en="Spring Boot Management API">
+                            API Spring Boot de Gestion
+                        </h3>
+                        <p data-fr="API RESTful développée avec Spring Boot pour gérer les produits, utilisateurs et commandes. 
+                        Intégration avec une base de données PostgreSQL et documentation automatique via Swagger." 
+                        data-en="RESTful API built with Spring Boot to manage products, users, and orders. Integrated with PostgreSQL database and auto-documented using Swagger.">
+                            API RESTful développée avec Spring Boot pour gérer les produits, utilisateurs et commandes. 
+                            Intégration avec PostgreSQL et documentation Swagger.
+                        </p>
+                        <div class="project-tech">
+                            <span>Spring Boot</span>
+                            <span>PostgreSQL</span>
+                            <span>REST API</span>
+                            <span>Swagger</span>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="portfolio.png" alt="Mon Portfolio" class="project-img" loading="lazy" style="width:100%;height:100%;object-fit:cover;">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://ton-portfolio.com" class="project-link" title="Voir le portfolio" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/Champy237/mon-portfolio" class="project-link" title="Code source" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 data-fr="Mon Portfolio" data-en="My Portfolio">Mon Portfolio</h3>
+                        <p data-fr="Site web personnel développé pour présenter mes projets, compétences et expériences. 
+                        Conçu avec HTML, CSS, JavaScript et responsive design pour être accessible sur tout type d'appareil." 
+                        data-en="Personal website built to showcase my projects, skills, and experiences. Designed with HTML, CSS, JavaScript, and responsive design for accessibility across all devices.">
+                            Site web personnel développé pour présenter mes projets, compétences et expériences. 
+                            Conçu avec HTML, CSS, JavaScript et un design responsive.
+                        </p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>Responsive Design</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="medical.png" alt="Gestion des Consultations Médicales en Ligne" class="project-img" loading="lazy" style="width:100%;height:100%;object-fit:cover;">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="http://localhost:8000" class="project-link" title="Voir l'application" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/Champy237/RuralMed" class="project-link" title="Code source" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 data-fr="Gestion des Consultations Médicales en Ligne" data-en="Online Medical Consultation Management">
+                            Gestion des Consultations Médicales en Ligne
+                        </h3>
+                        <p data-fr="Application web développée avec Django pour gérer les patients, professionnels de santé, rendez-vous, paiements et dossiers médicaux. 
+                        Elle permet aux patients de réserver leurs consultations en ligne et aux médecins de gérer leur emploi du temps." 
+                        data-en="Web application built with Django to manage patients, healthcare professionals, appointments, payments, and medical records. 
+                        It allows patients to book consultations online and doctors to manage their schedules.">
+                            Application web développée avec Django pour gérer les patients, médecins, rendez-vous, paiements et dossiers médicaux. 
+                            Les patients réservent en ligne, les médecins gèrent leurs consultations.
+                        </p>
+                        <div class="project-tech">
+                            <span>Django</span>
+                            <span>Python</span>
+                            <span>Bootstrap</span>
+                            <span>PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="stock.png" alt="Application de Gestion des Stocks" class="project-img" loading="lazy" style="width:100%;height:100%;object-fit:cover;">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="Voir l'application" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/Champy237/GESTION-DES-STOCK" class="project-link" title="Code source" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 data-fr="Application de Gestion des Stocks" data-en="Stock Management Application">
+                            Application de Gestion des Stocks
+                        </h3>
+                        <p data-fr="Application Python pour gérer les produits, fournisseurs, clients et commandes. 
+                        Intégrée avec une base de données MySQL, elle permet l'ajout, la modification, la suppression et le suivi des produits en stock." 
+                        data-en="Python application to manage products, suppliers, customers, and orders. Integrated with a MySQL database, it allows adding, updating, deleting, and tracking products in stock.">
+                            Application Python pour gérer les produits, fournisseurs, clients et commandes. 
+                            Intégrée avec MySQL, elle permet l'ajout, modification, suppression et suivi des produits en stock.
+                        </p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>MySQL</span>
+                            <span>CLI</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="nutrition.png" alt="Nutrition Manager API" class="project-img" loading="lazy" style="width:100%;height:100%;object-fit:cover;">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="Voir l'API" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/Champy237/food_management" class="project-link" title="Code source" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 data-fr="Nutrition Manager API" data-en="Nutrition Manager API">
+                            Nutrition Manager API
+                        </h3>
+                        <p data-fr="API RESTful développée avec Flask pour gérer des données nutritionnelles : consommateurs, aliments, ingrédients, catégories, allergies, historiques et chatbot. Dockerisé pour un déploiement rapide et architecture modulaire (Model - Repository - Service - Route)." 
+                        data-en="RESTful API built with Flask to manage nutrition data: consumers, foods, ingredients, categories, allergies, consumption history, and chatbot. Dockerized for quick deployment and modular architecture (Model - Repository - Service - Route).">
+                            API RESTful développée avec Flask pour gérer des données nutritionnelles : consommateurs, aliments, ingrédients, catégories, allergies, historiques et chatbot. Dockerisé pour un déploiement rapide et architecture modulaire (Model - Repository - Service - Route).
+                        </p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Flask</span>
+                            <span>PostgreSQL</span>
+                            <span>Docker</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title" data-fr="Contactez-moi" data-en="Contact Me">Contactez-moi</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4 data-fr="Localisation" data-en="Location">Localisation</h4>
+                            <p>Yaoundé, Cameroun</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>allan.ndjong@facsciences-uy1.cm</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4 data-fr="Téléphone" data-en="Phone">Téléphone</h4>
+                            <p>+237 6 83 94 12 28</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" action="https://formspree.io/f/myzdgqjd" method="POST">
+                    <div class="form-group">
+                        <input type="text" name ="name" placeholder="Votre nom" data-fr-placeholder="Votre nom" data-en-placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name = "email" placeholder="Votre email" data-fr-placeholder="Votre email" data-en-placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Votre message"  name ="message" data-fr-placeholder="Votre message" data-en-placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" data-fr="Envoyer le message" data-en="Send Message">Envoyer le message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2025 NDJONG CEDRIC ALLAN. <span data-fr="Tous droits réservés." data-en="All rights reserved.">Tous droits réservés.</span></p>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/Champy237" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="https://wa.me/+237683941228" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://t.me/+237678859754" class="social-link"><i class="fab fa-telegram"></i></a>
+                    <a href="https://www.facebook.com/champy.milliards" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
